@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "salahtracker",
-    "slug": "salahtracker",
+    "name": "expo-nativewind",
+    "slug": "expo-nativewind",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "salahtracker",
+    "scheme": "expo-nativewind",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
