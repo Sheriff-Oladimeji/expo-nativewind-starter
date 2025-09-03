@@ -67,6 +67,7 @@ pnpm start
 ```
 
 This opens the Expo Dev Tools. You can now run the app on:
+
 - iOS Simulator
 - Android Emulator
 - Web browser
