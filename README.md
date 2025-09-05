@@ -6,134 +6,98 @@ A minimal, modern Expo + Expo Router + NativeWind (Tailwind CSS for React Native
 
 ## 🚀 What is this?
 
-**Expo NativeWind Starter** is a clean, opinionated Expo project template built for rapid prototyping and modern app development. It replaces the default Expo boilerplate with:
+**Expo NativeWind Starter** is a clean, opinionated Expo project template built for rapid prototyping and modern app development. It contains:
 
-- **Expo Router** for filesystem-based navigation
-- **NativeWind** for Tailwind CSS utility classes in React Native
-- Minimal, production-ready folder structure
-- Preconfigured for iOS, Android, and Web
-- No extra clutter—just the essentials to get building fast
+* **Expo Router** for filesystem-based navigation
+* **NativeWind** for Tailwind-style utility classes in React Native
+* A minimal, production-ready folder structure
+* Preconfigured for iOS, Android, and Web
 
 ---
 
 ## ✨ Features
 
-- Expo Router navigation (tabs, stack, deep linking)
-- NativeWind (Tailwind CSS) styling out of the box
-- Ready for Expo Go, iOS, Android, and Web
-- Preconfigured assets (icons, splash, etc.)
-- TypeScript, ESLint, and Prettier
-- Easy to extend and customize
+* Expo Router (tabs, stack, deep linking)
+* NativeWind (Tailwind utilities) ready to use
+* TypeScript, ESLint, and Prettier configured
+* Example assets (icons, splash) and a small UI kit
 
 ---
 
-## 🛠️ Getting Started
+## 🛠️ Quickstart 
 
-### 1. **Fork this repo**
+If you cloned this starter and want to push it to a **new GitHub repository** (so the project lives in its own repo):
 
-> **Don’t clone directly if you want to push your changes!**
-> Fork it to your own GitHub account first, then clone your fork.
-
-- Click the **Fork** button (top right on GitHub)
-- Go to your forked repo (under your username)
-
-### 2. **Clone your fork**
-
-```sh
-git clone https://github.com/YOUR-USERNAME/expo-nativewind-starter.git
+```bash
+# 1) Clone the starter
+git clone https://github.com/Sheriff-Oladimeji/expo-nativewind-starter.git
 cd expo-nativewind-starter
+
+# 2) Point origin to your new repo (replace with your repo URL)
+git remote set-url origin https://github.com/your-username/my-app.git
+
+# 3) Ensure branch name is `main` and push
+git branch -M main
+git push -u origin main
 ```
 
-### 3. **Install dependencies**
+This preserves the starter's commit history while making `your-username/my-app` the remote `origin` for your new project.
 
-You need [Node.js](https://nodejs.org/) (18+) and [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) or [pnpm](https://pnpm.io/).
+---
+
+## 🧑‍💻 Run locally
+
+Install dependencies (Node 18+ recommended):
 
 ```sh
 npm install
 # or
-yarn install
+# yarn install
 # or
-pnpm install
+# pnpm install
 ```
 
-### 4. **Run the app**
+Run the app:
 
 ```sh
 npm start
 # or
-yarn start
+# yarn start
 # or
-pnpm start
+# pnpm start
 ```
 
-This opens the Expo Dev Tools. You can now run the app on:
-
-- iOS Simulator
-- Android Emulator
-- Web browser
-- Or scan the QR code with Expo Go on your phone
+Open Expo Dev Tools and run on simulator, emulator, or Expo Go.
 
 ---
 
-## 🧑‍💻 How to Use & Customize
+## 🧩 Customize
 
-- **Pages & Navigation:**
-  - Add new screens in `app/(tabs)/` or `app/`.
-  - Edit navigation in the same folders; Expo Router uses the file system.
-- **Styling:**
-  - Use Tailwind classes with NativeWind: `<View className="bg-blue-500 p-4">`
-  - Edit `tailwind.config.js` for custom themes.
-- **Assets:**
-  - Replace icons and splash screens in `assets/images/`.
-- **Components:**
-  - Place reusable components in `components/ui/`.
-- **Configuration:**
-  - Edit `app.json` and `package.json` as needed.
+* **Pages & Navigation:** Add screens in `app/(tabs)/` or `app/`. Expo Router maps files/folders to routes.
+* **Styling:** Use NativeWind classes in components, and edit `tailwind.config.js` for custom tokens.
+* **Assets:** Replace icons and splash images in `assets/images/`.
+* **Config:** Update `app.json` / `app.config.js` and `package.json` (`name`, `slug`, bundle identifiers).
 
----
+Checklist when creating a new project from this starter:
 
-## 📝 How to Push to Your Own GitHub Repo
-
-> **Don’t push to the original repo!**
-
-If you already cloned this repo without forking, you can still fix it:
-
-```sh
-git remote remove origin
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
-git push -u origin main
-```
-
-Or, start fresh by forking and cloning as shown above.
+* Update `package.json` `name`
+* Update `app.json` `expo.slug`, `name`, and platform identifiers
+* Replace icons, splash images, and metadata
+* Search & replace `expo-nativewind-starter` strings if needed
 
 ---
 
 ## 🤝 Contributing
 
-1. Fork this repo
-2. Create a new branch: `git checkout -b my-feature`
-3. Make your changes
-4. Commit: `git commit -m "feat: add my feature"`
-5. Push: `git push origin my-feature`
-6. Open a Pull Request
-
-All contributions welcome! Please keep PRs focused and well-documented.
-
----
-
-## 🙏 Credits & Inspiration
-
-- [Expo](https://expo.dev/)
-- [Expo Router](https://expo.github.io/router/docs)
-- [NativeWind](https://www.nativewind.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
+PRs welcome. Keep changes focused and include a clear description of the problem and the fix.
 
 ---
 
 ## 📄 License
 
-MIT
+[MIT](./LICENSE)
 
 ---
 
-> Made with ❤️ for the Expo, React Native, and Tailwind CSS community.
+
+> Made with ❤️ by Sheriff Oladimeji
